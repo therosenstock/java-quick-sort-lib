@@ -27,18 +27,18 @@ public class Main {
             switch (opcao) {
                 case 1:
                     int[] vetor1 = {74, 20, 74, 87, 81, 16, 25, 99, 44, 58};
-                    ordem.quickSort(vetor1, 0, vetor1.length);
+                    ordem.quickSort(vetor1, 0, vetor1.length-1);
                     exibir(vetor1);
                     break;
                 case 2:
                     int[] vetor2 = {44, 43, 42, 41, 40, 39, 38};
-                    ordem.quickSort(vetor2, 0, vetor2.length);
+                    ordem.quickSort(vetor2, 0, vetor2.length-1);
                     exibir(vetor2);
 
                     break;
                 case 3:
                     int[] vetor3 = {31, 32, 33, 34, 99, 98, 97, 96};
-                    ordem.quickSort(vetor3, 0, vetor3.length);
+                    ordem.quickSort(vetor3, 0, vetor3.length-1);
                     exibir(vetor3);
 
 
@@ -56,13 +56,13 @@ public class Main {
 
                     // Calcula o tempo de execução para o Merge Sort
                     startTime = System.nanoTime();
-                    ordem.mergeSort(arrayMergeSort, 0, 1500);
+                    ordem.mergeSort(arrayMergeSort, 0, 1499);
                     endTime = System.nanoTime();
                     long durationMergeSort = endTime - startTime;
 
                     // Calcula o tempo de execução para o Quick Sort
                     startTime = System.nanoTime();
-                    ordem.quickSort(arrayQuickSort, 0, 1500);
+                    ordem.quickSort(arrayQuickSort, 0, 1499);
                     endTime = System.nanoTime();
                     long durationQuickSort = endTime - startTime;
 
